@@ -330,7 +330,7 @@ class Resque_Worker
 		if(function_exists('cli_set_process_title')) {
 	        	cli_set_process_title($processTitle);
 	        } else{
-	       		$this->log($status);
+	       		$this->logger->log($status);
 	        }
 		/* just no
 		else if(function_exists('setproctitle')) {
